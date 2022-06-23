@@ -46,3 +46,20 @@ end
 p is_palindrome(1121)
 
 #-------------------------------------------------------
+
+def longest_common_prefix(strs)
+  longest_common_prefix = ''
+  index = 0
+  while index < strs.length
+      if strs[0][index] == strs[1][index] && strs[0][index] == strs[2][index]
+          longest_common_prefix += strs[0][index]
+      end
+      index += 1
+  end 
+  longest_common_prefix
+  
+end
+
+#Needs work
+
+#----------------------------------------------------------
